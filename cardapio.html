@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing page</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html"><img src="src/images/logo.svg" class="logo-image" alt="Início"></a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cardapio.html">Cardápio</a>
+                </li>
+            </ul>
+
+            <a href="https://wa.me/5514998947758?text=Quero%20saber%20mais%20sobre%20os%20docinhos!"><button
+                class="btn-default">
+                Peça aqui
+            </button></a>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cardapio.html">Cardápio</a>
+                </li>
+            </ul>
+
+            <a href="https://wa.me/5514998947758?text=Quero%20saber%20mais%20sobre%20os%20docinhos!"><button
+                class="btn-default">
+                Peça aqui
+            </button></a>
+            
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="menu">
+            <h1 class="section-title2">Cardápio</h1>
+            <h3 class="section-subtitle2">Nossos pratos especiais</h3>
+
+            <!-- Filtros de Categoria -->
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <!-- Item 1 - Trufas -->                <button class="category-btn" data-category="trufas">Trufas</button>
+                <!-- Item 2 - Bolos de pote -->         <button class="category-btn" data-category="bolos">Bolos de Pote</button>
+                <!-- Item 3 - Brigadeiro -->            <button class="category-btn" data-category="brigadeiro">Brigadeiros</button>
+                <!-- Item 4 - Palha italiana -->        <button class="category-btn" data-category="palha italiana">Palha Italiana</button>
+                <!-- Item 5 - Brownie -->               <button class="category-btn" data-category="brownie">Brownies</button>                
+                <!-- Item 6 - Sanduba de brownie -->    <button class="category-btn" data-category="Sanduba de Brownie">Sanduba de Brownie</button>
+
+
+                <div id="dishes" class="products-grid">
+
+                    <!-- Item 2 - Bolos de pote -->
+                    <div class="dish" data-category="bolos">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="src/images/bolo-de-pote.svg" class="dish-image" alt="Bolo de Pote">
+                        <h3 class="dish-title">Bolos de pote</h3>
+                        <span class="dish-description">
+                            Delicioso bolo de chocolate com recheio cremoso
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dish-price">
+                            <h4>R$12,00</h4>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 - Bolos de pote -->
+                    <div class="dish" data-category="Bolos de pote">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="src/images/bolo-de-pote.svg" class="dish-image" alt="Bolo de Pote">
+                        <h3 class="dish-title">Bolos de pote</h3>
+                        <span class="dish-description">
+                            Delicioso bolo de chocolate com recheio cremoso
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dish-price">
+                            <h4>R$12,00</h4>
+                        </div>
+                    </div>
+
+                    <!-- Item 1 - Trufas -->
+                    <div class="dish" data-category="trufas">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="src/images/trufa.svg" class="dish-image" alt="Trufa">
+                        <h3 class="dish-title">Trufa</h3>
+                        <span class="dish-description">
+                            Trufa premium com casca de chocolate meio amargo
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dish-price">
+                            <h4>R$5,00</h4>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 - Brownie -->
+                    <div class="dish" data-category="brownie">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="src/images/brownie.svg" class="dish-image" alt="Brownie">
+                        <h3 class="dish-title">Brownie</h3>
+                        <span class="dish-description">
+                            Brownie com pedaços de nozes e recheio de Nutella
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dish-price">
+                            <h4>R$18,00</h4>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 - Bolos de pote -->
+                    <div class="dish" data-category="bolos">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="src/images/bolo-de-pote.svg" class="dish-image" alt="Bolo de Pote">
+                        <h3 class="dish-title">Bolo de Pote</h3>
+                        <span class="dish-description">
+                            Bolo branco com recheio de creme e morangos frescos
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dish-price">
+                            <h4>R$12,00</h4>
+                        </div>
+                    </div>
+
+                    <!-- Item 1 - Trufas -->
+                    <div class="dish" data-category="trufas">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="src/images/trufa.svg" class="dish-image" alt="Trufa">
+                        <h3 class="dish-title">Trufa</h3>
+                        <span class="dish-description">
+                            Trufa branca com recheio de morango
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dish-price">
+                            <h4>R$5,00</h4>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 - Brownie -->
+                    <div class="dish" data-category="brownie">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="src/images/brownie.svg" class="dish-image" alt="Brownie">
+                        <h3 class="dish-title">Brownie </h3>
+                        <span class="dish-description">
+                            Brownie clássico com textura perfeita
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dish-price">
+                            <h4>R$15,00</h4>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 - Brownie -->
+                    <div class="dish" data-category="brownie">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="src/images/brownie.svg" class="dish-image" alt="Brownie">
+                        <h3 class="dish-title">Brownie </h3>
+                        <span class="dish-description">
+                            Brownie clássico com textura perfeita
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dish-price">
+                            <h4>R$15,00</h4>
+                        </div>
+
+                    </div>
+
+                    <!-- Item 5 - Brownie -->
+                    <div class="dish" data-category="brownie">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="src/images/brownie.svg" class="dish-image" alt="Brownie">
+                        <h3 class="dish-title">Brownie </h3>
+                        <span class="dish-description">
+                            Brownie clássico com textura perfeita
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dish-price">
+                            <h4>R$15,00</h4>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Item 5 - Brownie -->
+                    <div class="dish" data-category="brownie">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="src/images/brownie.svg" class="dish-image" alt="Brownie">
+                        <h3 class="dish-title">Brownie </h3>
+                        <span class="dish-description">
+                            Brownie clássico com textura perfeita
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dish-price">
+                            <h4>R$15,00</h4>
+                        </div>                      
+                    </div>
+
+                    <!-- Item 6 - Sanduba de Brownie -->
+                    <div class="dish" data-category="Sanduba de Brownie">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="src/images/brownie.svg" class="dish-image" alt="Sanduba de Brownie">
+                        <h3 class="dish-title">Sanduba de Brownie</h3>
+                        <span class="dish-description">
+                            Brownie clássico com textura perfeita
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dish-price">
+                            <h4>R$15,00</h4>
+                        </div>
+
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 LR DOCES GOURMET
+            </span>
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>

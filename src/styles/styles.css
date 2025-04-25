@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('menu.css');
+@import url('testimonials.css');
+@import url('footer.css');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #51e5ff;
+}
+
+section {
+    padding: 28px 8%;
+}
+
+.btn-default {
+    border: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5858ff;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-default:hover {
+    background-color: #2424ff;
+}
+
+.btn-enviar {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5858ff;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #2424ff;
+}
+
+.btn-default-phone {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5858ff00;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: white;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color .3s ease;
+}
+
+.social-media-buttons a:hover {
+    background-color: rgba(255, 255, 255, 0.534);
+}
+
+/*troca a cor do escrito cardapio */
+.section-title {
+    color: rgb(0, 0, 0);
+    font-size: 1.563rem;
+    transition: background-color .3s ease;
+}
+
+.section-subtitle {
+    font-size: 2.1875rem;
+}
+
+.section-subtitle1 {
+    font-size: 1.3rem;
+}
+
+.section-title2 {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    transition: background-color .3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.section-subtitle2 {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.category-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+.category-btn {
+    padding: 8px 16px;
+    border: 2px solid #5858ff;
+    background: white;
+    color: #5858ff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.category-btn.active {
+    background: #5858ff;
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .category-filters {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .category-btn {
+        flex: 0 0 auto;
+    }
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 colunas */
+    gap: 20px;
+    /* Espaçamento entre os itens */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
